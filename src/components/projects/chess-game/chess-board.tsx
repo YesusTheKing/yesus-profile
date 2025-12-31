@@ -181,6 +181,7 @@ function BoardSquare({
         alignItems: "center",
         justifyContent: "center",
         fontSize: "12px",
+        opacity: isDragging ? 0.5 : 1,
         userSelect: "none",
         cursor: "pointer", // Optional: improves UX
       }}
