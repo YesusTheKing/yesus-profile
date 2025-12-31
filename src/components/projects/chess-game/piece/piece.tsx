@@ -1,6 +1,6 @@
 import type { PieceProps } from "./piece-props";
 const pieceImages: Record<string, Record<string, string>> = {
-    white: {
+    w: {
         p: "/white_pawn.svg",
         r: "/white_rook.svg",
         n: "/white_knight.svg",
@@ -8,7 +8,7 @@ const pieceImages: Record<string, Record<string, string>> = {
         q: "/white_queen.svg",
         k: "/white_king.svg",
     },
-    black: {
+    b: {
         p: "/black_pawn.svg",
         r: "/black_rook.svg",
         n: "/black_knight.svg",
@@ -18,7 +18,7 @@ const pieceImages: Record<string, Record<string, string>> = {
     },
 };
 
-export function Piece(props: PieceProps) {
+export function PieceE(props: PieceProps) {
     const { color, name } = props;
     const src = pieceImages[color][name];
     return (
